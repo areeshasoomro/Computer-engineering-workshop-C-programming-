@@ -1,0 +1,97 @@
+lab task 1:
+#take two inputs and add subtarct multiply divide them 
+#include <stdio.h>
+#include <stdlib.h>
+  int main(){
+  intx;
+  int y;
+  printf("enter x:\n");
+  scanf("%d",&x);
+  printf("enter y:\n");
+  scanf("%d",&y);
+  printf("x+y :%d\n",x+y);
+   printf("x-y :%d\n",x-y);
+   printf("x/y :%d\n",x/y);
+   printf("x*y :%d\n",x*y);
+  return 0;
+  
+  }
+# if any number is positive check if it is even or odd
+#include <stdio.h>
+#include <stdlib.h>
+  int main(){
+    int x;
+    printf("enter any number:");
+    scanf("%d",&x);
+    if (x>0){
+      if (x%2==0){
+        printf("the number is even !");
+      }
+      else{
+        printf("the number is odd !!");
+      }
+      }
+    }
+#call a function to print table upto 10 of  input number asked 
+#include <stdio.h>
+#include <stdlib.h>
+void func(int x){
+  printf("%d*1=%d\n",x,x*1);
+   printf("%d*2=%d\n",x,x*2);
+   printf("%d*3=%d\n",x,x*3);
+   printf("%d*4=%d\n",x,x*4);
+   printf("%d*5=%d\n",x,x*5);
+   printf("%d*6=%d\n",x,x*6);
+   printf("%d*7=%d\n",x,x*7);
+   printf("%d*8=%d\n",x,x*8);
+   printf("%d*9=%d\n",x,x*9);
+   printf("%d*10=%d\n",x,x*10);
+}
+  int main(){
+    int x;
+    printf("enter x:");
+    scanf("%d",&x);
+    func(x);
+    return 0;
+  }
+
+#take two input if both inputs are greatter than 5 add them or any one is greater than 5 multiply them else both are neither greater than 5 print hello world 
+#include <stdio.h>
+#include <stdlib.h>
+int main(){
+  int x;
+int y;
+  printf("enter x:");
+  scanf("%d",&x);
+  printf("enter y:");
+  scanf("%d",&y);
+  if(x && y >5){
+    printf(x+y);
+  }else if (x || y>5){
+    printf(x*y);
+  }else{
+    printf("hello world");
+  }
+  return 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
