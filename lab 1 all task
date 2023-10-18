@@ -75,9 +75,54 @@ int y;
   return 0;
 }
 
+#include <stdio.h>
+#include <stdlib.h>
+int main() {
+    int employeeID;
+    float hoursWorked, hourlyRate, salary
+    printf("Enter employee ID: ");
+    scanf("%d", &employeeID);
+    printf("Enter total hours worked in a month: ");
+    scanf("%f", &hoursWorked);
+    printf("Enter amount received per hour: ");
+    scanf("%f", &hourlyRate);
+    salary = hoursWorked * hourlyRate;
+    printf("Employee ID: %d\n", employeeID);
+    printf("Salary for the month: $%.2f", salary);
+    return 0;
+}
 
 
+#include <stdio.h>
 
+int main() {
+    float height, width, perimeter, area;
+    printf("Enter the height of the rectangle: ");
+    scanf("%f", &height);
+    printf("Enter the width of the rectangle: ");
+    scanf("%f", &width);
+    perimeter = 2 * (height + width);
+    area = height * width;
+    printf("\nPerimeter of the rectangle: %.2f units\n", perimeter);
+    printf("Area of the rectangle: %.2f square units\n", area);
+    return 0;
+}
+
+
+#include <stdio.h>
+int main() {
+    float height;
+    printf("Enter the height of the person in centimeters: ");
+    scanf("%f", &height);
+    if (height < 150) {
+        printf("Person is categorized as a Dwarf.\n");
+    } else if (height >= 150 && height < 165) {
+        printf("Person is categorized as Average.\n");
+    } else {
+        printf("Person is categorized as Tall.\n");
+    }
+    return 0;
+}
 
 
 
