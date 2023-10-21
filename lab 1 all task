@@ -1,4 +1,10 @@
-lab task 1:
+___---_______---_____---________---__________---________----__
+@@@@@@@@@@@@@@@@@@@@@@@LAB 1 CEW (C PROGRAMMING)@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+------______---------___----------____---______-------_____
+
+
+
+
 #take two inputs and add subtarct multiply divide them 
 #include <stdio.h>
 #include <stdlib.h>
@@ -74,7 +80,10 @@ int y;
   }
   return 0;
 }
-
+(lab task 1)
+#Write a C program that accepts an employee's ID, total worked hours in a month and
+#the amount received per hour. Print the ID and salary (with two decimal places) of the
+#employee for a particular month.
 #include <stdio.h>
 #include <stdlib.h>
 int main() {
@@ -91,10 +100,10 @@ int main() {
     printf("Salary for the month: $%.2f", salary);
     return 0;
 }
-
-
+(lab task 2)
+Write a C program that takes the height and width of a rectangle as an input from user
+and compute the perimeter and area of a rectangle.
 #include <stdio.h>
-
 int main() {
     float height, width, perimeter, area;
     printf("Enter the height of the rectangle: ");
@@ -107,8 +116,10 @@ int main() {
     printf("Area of the rectangle: %.2f square units\n", area);
     return 0;
 }
-
-
+(lab task 3)
+Write a C program to accept the height of a person in centimeters and categorize the
+person according to his height. (Height < 150cm – Dwarf, Height=150cm – Average,
+Height>=165cm – Tall).
 #include <stdio.h>
 int main() {
     float height;
@@ -123,6 +134,93 @@ int main() {
     }
     return 0;
 }
+(lab task 5)
+Write a program in C to convert a decimal number to a binary number using functions.
+#include <stdio.h>
+int fibonacci(int n) {
+    if (n <= 1) {
+        return n;
+    } else {
+        return fibonacci(n - 1) + fibonacci(n - 2);
+    }
+}
+void Series(int n) {
+    int first = 0, second = 1, third;
+    printf("Fibonacci series up to %d terms: ", n);
+    for (int i = 0; i < n; ++i) {
+        if (i <= 1) {
+            third = i;
+        } else {
+            third = first + second;
+            first = second;
+            second = third;
+        }
+        printf("%d ", third);
+    }
+    printf("\n");
+}
+int main() {
+    int n;
+    printf("Enter the number of terms for Fibonacci series: ");
+    scanf("%d", &n);
+    printf("The %dth Fibonacci number is: %d\n", n, fibonacci(n));
+    Series(n);
+    return 0;
+}
+
+(lab task 4)
+Write a program in C to convert a decimal number to a binary numbers.
+#include <stdio.h>
+int main() {
+    int n;
+    printf("Enter number: ");
+    scanf("%d", &n);
+    int binary[10]; 
+    int i = 0;
+    while (n != 0) {
+        int r = n % 2;
+        binary[i] = r;
+        n = n / 2;
+        i++;
+    }
+    printf("Binary equivalent: ");
+    for (int j = i - 1; j >= 0; j--) {
+        printf("%d", binary[j]);
+    }
+    printf("\n");
+    return 0;
+}
+
+
+
+(lab task 4)
+Write a program in C to convert a decimal number to a binary number using functions.
+(upper scenario is without functions )
+#include <stdio.h>
+void decimalToBinary(int decimalNumber) {
+    int binaryNumber[10]; 
+    int i = 0;
+    while (decimalNumber > 0) {
+        binaryNumber[i] = decimalNumber % 2;
+        decimalNumber = decimalNumber / 2;
+        i++;
+    }
+    printf("Binary equivalent: ");
+    for (int j = i - 1; j >= 0; j--) {
+        printf("%d", binaryNumber[j]);
+    }
+    printf("\n");
+}
+int main() {
+    int decimalNumber;
+    printf("Enter a decimal number: ");
+    scanf("%d", &decimalNumber);
+    decimalToBinary(decimalNumber);
+    return 0;
+}
+
+
+
 
 
 
