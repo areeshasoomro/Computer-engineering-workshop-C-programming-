@@ -135,7 +135,7 @@ int main() {
     return 0;
 }
 (lab task 5)
-Write a program in C to convert a decimal number to a binary number using functions.
+write program to calculate nth term of fibonnaci series and print series 
 #include <stdio.h>
 int fibonacci(int n) {
     if (n <= 1) {
