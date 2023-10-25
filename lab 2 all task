@@ -1,0 +1,56 @@
+lab 2 
+exercise 1 
+print odd number and sum from do while ,for ,while loop
+#include <stdio.h>
+int main() {
+    int sum=0,n,i;
+    printf("enter the n:");
+    scanf("%d",&n);
+    for(i=0;i<=n;i++){
+        printf("the odd numbers are:%d \n",2*i+1);
+        sum+=(2*i+1);
+    }
+     printf("the sum is:%d\n",sum);
+    return 0;
+}
+#include <stdio.h>
+int main() {
+    int sum=0,n,i=0;
+    printf("enter the n:");
+    scanf("%d",&n);
+    while(i<=n){
+        printf("the odd numbers are:%d \n",2*i+1);
+        sum+=(2*i+1);
+        i++;
+    }
+     printf("the sum is:%d\n",sum);
+    return 0;
+}
+#include <stdio.h>
+int main() {
+    int sum=0,n,i=0;
+    printf("enter the n:");
+    scanf("%d",&n);
+    do{
+        printf("the odd numbers are:%d \n",2*i+1);
+        sum+=(2*i+1);
+        i++;
+    }while(i<=n);
+     printf("the sum is:%d\n",sum);
+    return 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
